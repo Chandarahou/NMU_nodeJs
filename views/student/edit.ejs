@@ -1,0 +1,13 @@
+<form method="post" action="/update/<%= Stu.id %>">
+    <br>
+    <div class="form-group">
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="<%= Stu.firstName %>" name="fName" >
+    </div> <br>
+    <div class="form-group">
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="<%= Stu.lastName %>" name="lName" >
+    </div> <br>
+    <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="<%= Stu.phone %>" Name="phone"  >
+      </div> <br>
+    <button type="submit" class="btn btn-success">Update</button>
+</form>

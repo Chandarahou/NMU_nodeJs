@@ -1,0 +1,21 @@
+<form method="post" action="/create" enctype="multipart/form-data">
+  <% if (locals.err) { %>
+    <div class="form-outline flex-fill mb-0">
+      <p style="color: red;">Opp somthing went wrong. Try agian!</p>
+    </div>
+  <% } %>
+    <br>
+    <div class="form-group">
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" name="fName">
+    </div> <br>
+    <div class="form-group">
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name" name="lName">
+    </div> <br>
+    <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone number" Name="phone">
+      </div> <br>
+      <div class="form-group">
+        <input type="file" class="form-control" id="exampleInputPassword1" placeholder="Phone number" Name="image" >
+      </div> <br>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
